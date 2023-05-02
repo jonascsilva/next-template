@@ -1,0 +1,12 @@
+{
+  "importOrder": ["<THIRD_PARTY_MODULES>", "\\.\\/.*(?<!css)$", "^\\@\\/", "\\.\\/.", "^\\$\\/"],
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrderSeparation": true,
+  "trailingComma": "none",
+  "jsxSingleQuote": true,
+  "arrowParens": "avoid",
+  "singleQuote": true,
+  "endOfLine": "auto",
+  "printWidth": 120,
+  "semi": false
+}

@@ -1,5 +1,8 @@
 .main {
-  h1 {
-    font-size: 2rem;
-  }
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 2rem;
 }

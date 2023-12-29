@@ -1,3 +1,4 @@
+import cn from 'classnames'
 import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { PropsWithChildren } from 'react'
@@ -13,7 +14,7 @@ const metadata: Metadata = {
 
 const Layout = ({ children }: PropsWithChildren) => (
   <html lang='en'>
-    <body className={[inter.className, styles.body].join(' ')}>{children}</body>
+    <body className={cn(inter.className, styles.body)}>{children}</body>
   </html>
 )
 

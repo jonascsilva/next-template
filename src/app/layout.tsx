@@ -18,4 +18,4 @@ const Layout = ({ children }: PropsWithChildren) => (
   </html>
 )
 
-export { Layout as default, metadata }
+export { metadata, Layout as default }

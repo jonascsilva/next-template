@@ -3,9 +3,10 @@ import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { PropsWithChildren } from 'react'
 
-import styles from './layout.module.scss'
+import { Client } from './layout.client'
+import classes from './layout.module.scss'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], weight: ['400', '600', '700'] })
 
 const metadata: Metadata = {
   title: 'Create Next App',
@@ -13,8 +14,10 @@ const metadata: Metadata = {
 }
 
 const Layout = ({ children }: PropsWithChildren) => (
-  <html lang='en'>
-    <body className={cn(inter.className, styles.body)}>{children}</body>
+  <html lang='en' suppressHydrationWarning>
+    <body className={cn(inter.className, classes.body)}>
+      <Client>{children}</Client>
+    </body>
   </html>
 )
 

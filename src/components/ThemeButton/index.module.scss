@@ -1,0 +1,41 @@
+@use '$/colors';
+
+.button {
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  [data-theme='light'] & {
+    background-color: colors.$blueGrey-100;
+  }
+
+  [data-theme='dark'] & {
+    background-color: colors.$blueGrey-800;
+  }
+
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+
+  @media (min-width: 0rem) {
+    border-radius: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.3rem;
+  }
+
+  @media (min-width: 22rem) {
+    border-radius: 0.4rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.4rem;
+  }
+
+  @media (min-width: 46rem) {
+    border-radius: 0.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0.5rem;
+  }
+}

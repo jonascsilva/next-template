@@ -1,4 +1,4 @@
-import cn from 'classnames'
+import clsx from 'clsx'
 import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { PropsWithChildren } from 'react'
@@ -15,7 +15,7 @@ const metadata: Metadata = {
 
 const Layout = ({ children }: PropsWithChildren) => (
   <html lang='en' suppressHydrationWarning>
-    <body className={cn(inter.className, classes.body)}>
+    <body className={clsx(inter.className, classes.body)}>
       <Client>{children}</Client>
     </body>
   </html>

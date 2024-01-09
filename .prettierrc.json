@@ -7,7 +7,6 @@
   "jsxSingleQuote": true,
   "arrowParens": "avoid",
   "singleQuote": true,
-  "endOfLine": "auto",
   "printWidth": 100,
   "semi": false
 }

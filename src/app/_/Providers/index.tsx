@@ -3,12 +3,10 @@
 import { ThemeProvider } from 'next-themes'
 import { PropsWithChildren } from 'react'
 
-import { Themes } from '@/_/themes.types'
+import { themes } from '@/_/themes'
 
-const themes: Themes = ['light', 'dark']
-
-const Client = ({ children }: PropsWithChildren) => (
+const Providers = ({ children }: PropsWithChildren) => (
   <ThemeProvider themes={themes}>{children}</ThemeProvider>
 )
 
-export { Client }
+export { Providers }

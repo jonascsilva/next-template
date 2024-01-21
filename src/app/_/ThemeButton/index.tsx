@@ -3,22 +3,20 @@
 import { useTheme } from 'next-themes'
 import { MdDarkMode, MdLightMode } from 'react-icons/md'
 
-import { useIsMounted } from '@/hooks/useIsMounted'
-import { Theme } from '@/types/themes'
+import { nextThemes } from '@/_/themes'
+import { Theme } from '@/_/themes.types'
+import { useIsMounted } from '@/_/useIsMounted'
 
 import classes from './index.module.scss'
 
-const nextThemes = {
-  dark: 'light',
-  light: 'dark'
-}
-
-function ThemeButton() {
+const ThemeButton = () => {
   const isMounted = useIsMounted()
   const { resolvedTheme, setTheme } = useTheme()
 
-  function handleClick() {
-    const nextTheme = nextThemes[resolvedTheme as Theme]
+  const handleClick = () => {
+    const currentTheme = resolvedTheme as Theme
+
+    const nextTheme = nextThemes[currentTheme]
 
     setTheme(nextTheme)
   }

@@ -1,4 +1,4 @@
-import { ThemeButton } from '#/ThemeButton'
+import { ThemeButton } from '@/_/ThemeButton'
 
 import classes from './page.module.scss'
 

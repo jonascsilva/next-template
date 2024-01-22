@@ -1,4 +1,5 @@
 @use '@/_/colors';
+@use '@/_/media-queries' as *;
 
 .button {
   border: 0;
@@ -18,21 +19,14 @@
     cursor: pointer;
   }
 
-  @media (min-width: 0rem) {
-    border-radius: 0.3rem;
-    width: 2rem;
-    height: 2rem;
-    padding: 0.3rem;
-  }
-
-  @media (min-width: 22rem) {
+  @include lt-md {
     border-radius: 0.4rem;
     width: 2.5rem;
     height: 2.5rem;
     padding: 0.4rem;
   }
 
-  @media (min-width: 46rem) {
+  @include gt-sm {
     border-radius: 0.5rem;
     width: 3.5rem;
     height: 3.5rem;

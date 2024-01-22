@@ -7,7 +7,7 @@ import { Providers } from './_/Providers'
 
 import classes from './layout.module.scss'
 
-const inter = Inter({ subsets: ['latin'], weight: ['400', '600', '700'] })
+const inter = Inter({ subsets: ['latin'] })
 
 const metadata: Metadata = {
   title: 'Next.js Template',

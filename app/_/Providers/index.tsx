@@ -3,7 +3,7 @@
 import { ThemeProvider } from 'next-themes'
 import { PropsWithChildren } from 'react'
 
-import { themes } from '@/_/themes'
+import { themes } from '@/_/themes.utils'
 
 const Providers = ({ children }: PropsWithChildren) => (
   <ThemeProvider themes={themes}>{children}</ThemeProvider>

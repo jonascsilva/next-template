@@ -1,22 +1,19 @@
 'use client'
 
-import { useTheme } from 'next-themes'
 import { MdDarkMode, MdLightMode } from 'react-icons/md'
 
-import { Theme } from '@/_/themes.types'
 import { getNextTheme } from '@/_/themes.utils'
+import { useTheme } from '@/_/useTheme'
 
 import { useIsMounted } from './useIsMounted'
 
 import classes from './index.module.scss'
 
 const ThemeButton = () => {
+  const { currentTheme, setTheme } = useTheme()
   const isMounted = useIsMounted()
-  const { resolvedTheme, setTheme } = useTheme()
 
   const handleClick = () => {
-    const currentTheme = resolvedTheme as Theme
-
     const nextTheme = getNextTheme(currentTheme)
 
     setTheme(nextTheme)
@@ -29,8 +26,8 @@ const ThemeButton = () => {
       className={classes.button}
       aria-label='Change theme'
     >
-      {isMounted && resolvedTheme === 'dark' && <MdLightMode size='100%' />}
-      {isMounted && resolvedTheme === 'light' && <MdDarkMode size='100%' />}
+      {isMounted && currentTheme === 'dark' && <MdLightMode size='100%' />}
+      {isMounted && currentTheme === 'light' && <MdDarkMode size='100%' />}
     </button>
   )
 }

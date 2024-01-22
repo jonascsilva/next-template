@@ -1,6 +1,5 @@
-import type { Theme, Themes } from './themes.types'
-
-const themes: Themes = ['light', 'dark']
+import { themes } from './themes.consts'
+import type { Theme } from './themes.types'
 
 const getNextTheme = (theme: Theme) => {
   const currentThemeIndex = themes.indexOf(theme)
@@ -10,4 +9,4 @@ const getNextTheme = (theme: Theme) => {
   return themes[nextThemeIndex]
 }
 
-export { themes, getNextTheme }
+export { getNextTheme }

@@ -1,4 +1,4 @@
-import { Themes } from '@/_/themes.types'
+import type { Themes } from '@/_/themes.types'
 
 const themes: Themes = ['light', 'dark']
 

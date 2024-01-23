@@ -19,17 +19,27 @@
     cursor: pointer;
   }
 
-  @include lt-md {
-    border-radius: 0.4rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    padding: 0.4rem;
+  @include xs {
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 0.3rem;
   }
 
-  @include gt-sm {
+  @include sm {
+    width: 3rem;
+    height: 3rem;
     border-radius: 0.5rem;
-    width: 3.5rem;
+  }
+
+  @include md {
     height: 3.5rem;
-    padding: 0.5rem;
+    width: 3.5rem;
+    border-radius: 0.5rem;
+  }
+
+  @include gt-md {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.5rem;
   }
 }

@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@jonascsilva/crypt-ui':
+    specifier: ^1.0.0
+    version: 1.0.0
   clsx:
     specifier: ^2.1.0
     version: 2.1.0
@@ -266,6 +269,10 @@ packages:
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: /wrap-ansi@7.0.0
     dev: true
+
+  /@jonascsilva/crypt-ui@1.0.0:
+    resolution: {integrity: sha512-kcupzmVhMYCkFrebWuIda2QeUT525AgWExsxzEtRbfnFDhdFAWEaGeHZ4Fg6g6xmcTPt8/EHm5J1Css59vrU6A==, tarball: https://npm.pkg.github.com/download/@jonascsilva/crypt-ui/1.0.0/43b49755c1405b5acf88c36e7ece33ef253fc8ab}
+    dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
